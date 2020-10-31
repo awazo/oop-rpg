@@ -1,5 +1,5 @@
 import { default as Model } from './model/model.js';
+import { default as Controller } from './controller/controller.js';
 
-var character = new Model.Character();
-console.log(character.name);
+Controller.Game.start(Model);
 
