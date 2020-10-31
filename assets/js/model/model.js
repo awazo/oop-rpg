@@ -8,7 +8,7 @@ Model.Character = Character;
 Model.test = function() {
   var human = new Model.Character.Human();
   human.showStatus();
-  (new AbstractCharacter()).showStatus();
+  AbstractCharacter.showStatus();
 };
 
 export default Model;
