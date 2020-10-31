@@ -1,9 +1,10 @@
 import { default as AbstractCharacter } from './../abstractCharacter.js';
 
 function Human() {
-}
 
-Human.prototype = AbstractCharacter;
+  this.prototype = new AbstractCharacter();
+
+}
 
 export default Human;
 
