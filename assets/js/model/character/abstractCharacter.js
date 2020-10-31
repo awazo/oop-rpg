@@ -8,5 +8,5 @@ function AbstractCharacter() {
 
 }
 
-export default as AbstractCharacter;
+export default AbstractCharacter;
 
