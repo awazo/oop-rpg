@@ -4,13 +4,13 @@ function Human() {
 
   AbstractCharacter.call(this);
 
-  this.showStatus = function() {
-    console.log('status is: ' + this.status);
-  };
-
 }
 
 Human.prototype = AbstractCharacter.prototype;
+
+Human.prototype.showStatus = function() {
+  console.log('status is: ' + this.status);
+};
 
 export default Human;
 
