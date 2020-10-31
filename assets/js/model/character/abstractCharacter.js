@@ -1,6 +1,4 @@
-function AbstractCharacter() {}
-
-AbstractCharacter.prototype = {
+var AbstractCharacter = {
 
   status: 'none',
 

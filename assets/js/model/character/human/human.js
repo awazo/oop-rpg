@@ -2,15 +2,16 @@ import { default as AbstractCharacter } from './../abstractCharacter.js';
 
 function Human() {
 
-  AbstractCharacter.call(this);
-
 }
 
-Human.prototype = AbstractCharacter.prototype;
-
-Human.prototype.showStatus = function() {
-  console.log('status is: ' + this.status);
-};
+Human.prototype = Object.create(AbstractCharacter, {
+  showStatus: {
+    value: function() {
+      console.log('status is: ');
+      AbstractCharacter.showStatus();
+    }
+  }
+});
 
 export default Human;
 
