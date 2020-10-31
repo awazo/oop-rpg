@@ -10,7 +10,7 @@ Human.prototype = Object.create(AbstractCharacter, {
   showStatus: {
     value: function() {
       console.log('status is: ');
-      AbstractCharacter.showStatus();
+      AbstractCharacter.showStatus.apply(this, arguments);
     }
   }
 });
