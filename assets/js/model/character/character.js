@@ -1,10 +1,6 @@
-var model = model || {};
-model.character = function() {
-  this.name = 'character';
+function Character() {
+  this.name = 'hoge';
 };
 
-export default character;
-
-// export * from './human/human.js';
-// export * from './monster/monster.js';
+export default Character;
 
