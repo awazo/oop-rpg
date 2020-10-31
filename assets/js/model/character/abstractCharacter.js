@@ -1,12 +1,14 @@
-function AbstractCharacter() {
+function AbstractCharacter() {}
 
-  this.status = 'none';
+AbstractCharacter.prototype = {
 
-  this.showStatus = function() {
+  status: 'none',
+
+  showStatus: function() {
     console.log(this.status);
-  };
+  }
 
-}
+};
 
 export default AbstractCharacter;
 
