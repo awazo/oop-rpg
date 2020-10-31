@@ -6,7 +6,12 @@ Model.Character = Character;
 /** for test **/
 Model.test = function() {
   console.log('hoge');
-  (new Model.Character.Human()).showStatus();
+  var human = new Model.Character.Human();
+  console.log(human);
+  console.log(human.prototype);
+  console.log(human.showStatus);
+  console.log(human.prototype.showStatus);
+  human.showStatus();
 };
 
 export default Model;
