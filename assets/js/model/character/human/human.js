@@ -14,6 +14,7 @@ Human.prototype = Object.create(AbstractCharacter, {
     }
   }
 });
+Human.prototype.constructor = Human;
 
 export default Human;
 
