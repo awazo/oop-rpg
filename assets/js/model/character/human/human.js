@@ -1,4 +1,4 @@
-import { default as AbstractCharacter } from './../abstractCharacter';
+import { default as AbstractCharacter } from './../abstractCharacter.js';
 
 function Human() {
 }
