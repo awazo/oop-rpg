@@ -2,6 +2,8 @@ import { default as AbstractCharacter } from './../abstractCharacter.js';
 
 function Human() {
 
+  this.status = 'dead';
+
 }
 
 Human.prototype = Object.create(AbstractCharacter, {
