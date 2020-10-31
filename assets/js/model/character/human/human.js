@@ -4,7 +4,7 @@ function Human() {
 
 }
 
-Human.prototype = new AbstractCharacter();
+Human.prototype.constructor = AbstractCharacter;
 
 export default Human;
 
