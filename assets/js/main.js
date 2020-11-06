@@ -1,5 +1,5 @@
-import { default as Model } from './model/model.js';
-import { default as Controller } from './controller/controller.js';
+import { default as model } from './model/model.js';
+import { default as controller } from './controller/controller.js';
 
-(new Controller.Game()).start(Model);
+(new controller.game()).start(model);
 

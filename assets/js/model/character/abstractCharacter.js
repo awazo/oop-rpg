@@ -1,4 +1,4 @@
-var AbstractCharacter = {
+var abstractCharacter = {
 
   status: 'none',
 
@@ -8,5 +8,5 @@ var AbstractCharacter = {
 
 };
 
-export default AbstractCharacter;
+export default abstractCharacter;
 

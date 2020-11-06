@@ -1,20 +1,44 @@
-import { default as AbstractCharacter } from './../abstractCharacter.js';
+import { default as abstractCharacter } from './../abstractCharacter.js';
 
-function Human() {
+function human() {
 
-  this.status = 'dead';
+  this.name = null;
+  this.gender = 0;
+  this.length = 0;
+  this.weight = 0;
+  this.vitality = 0;
+  this.magic = 0;
+
+  this.talk = function(about) {
+    return about;
+  };
+
+  this.eatFood = function(food) {
+    var foodType = 0;
+    if (food == 'やくそう') {
+      foodType = 1;
+    } else if (food == 'まほうのみず') {
+      foodType = 2;
+    } else {
+      foodType = 3;
+    }
+    this.digestFood(foodType);
+  };
+
+  this.digestFood = function(foodType) {
+    if (foodType == 1) {
+      vitality += 10;
+    } else if (foodType == 2) {
+      magic += 10;
+    } else {
+      vitality += 1;
+    }
+  };
 
 }
 
-Human.prototype = Object.create(AbstractCharacter, {
-  showStatus: {
-    value: function() {
-      console.log('status is: ');
-      AbstractCharacter.showStatus.apply(this, arguments);
-    }
-  }
-});
-Human.prototype.constructor = Human;
+human.prototype = Object.create(abstractCharacter);
+human.prototype.constructor = human;
 
-export default Human;
+export default human;
 

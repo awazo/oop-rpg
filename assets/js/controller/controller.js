@@ -1,7 +1,7 @@
-import { default as Game } from './game.js';
+import { default as game } from './game.js';
 
-var Controller = {};
-Controller.Game = Game;
+var controller = {};
+controller.game = game;
 
-export default Controller;
+export default controller;
 

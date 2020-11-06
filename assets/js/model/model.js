@@ -1,15 +1,7 @@
-import { default as Character } from './character/character.js';
-import { default as AbstractCharacter } from './character/abstractCharacter.js';
+import { default as character } from './character/_namespace.js';
 
-var Model = {};
-Model.Character = Character;
+var model = {};
+model.character = character;
 
-/** for test **/
-Model.test = function() {
-  var human = new Model.Character.Human();
-  human.showStatus();
-  AbstractCharacter.showStatus();
-};
-
-export default Model;
+export default model;
 
