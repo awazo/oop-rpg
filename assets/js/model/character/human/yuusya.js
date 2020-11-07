@@ -2,7 +2,7 @@ import { default as human } from './human.js';
 
 function yuusya() {
 
-  human();
+  human.call(this);
 
   this.name = 'ゆうしゃ';
   this.gender = 1;
