@@ -2,6 +2,8 @@ import { default as human } from './human.js';
 
 function yuusya() {
 
+  human();
+
   this.name = 'ゆうしゃ';
   this.gender = 1;
   this.length = 180;
@@ -26,7 +28,7 @@ function yuusya() {
 
 }
 
-yuusya.prototype = Object.create(human.prototype);
+yuusya.prototype = Object.create(human);
 yuusya.prototype.constructor = yuusya;
 
 export default yuusya;
