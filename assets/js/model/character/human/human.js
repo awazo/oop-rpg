@@ -27,11 +27,11 @@ function human() {
 
   this.digestFood = function(foodType) {
     if (foodType == 1) {
-      vitality += 10;
+      this.vitality += 10;
     } else if (foodType == 2) {
-      magic += 10;
+      this.magic += 10;
     } else {
-      vitality += 1;
+      this.vitality += 1;
     }
   };
 
