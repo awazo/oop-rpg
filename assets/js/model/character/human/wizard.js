@@ -2,7 +2,7 @@ import { default as human } from './human.js';
 
 function wizard() {
 
-  this.name = 'まほうつかい';
+  this.characterName = 'まほうつかい';
   this.gender = 1;
   this.length = 170;
   this.weight = 60;
@@ -11,14 +11,14 @@ function wizard() {
 
   this.magicAttack = function(target) {
     var output = '';
-    output += this.name + ' の こうげき' + '\n';
-    output += this.name + ' は こうげきじゅもん を となえた！' + '\n';
+    output += this.characterName + ' の こうげき' + '\n';
+    output += this.characterName + ' は こうげきじゅもん を となえた！' + '\n';
 
     target.vitality -= 20;
-    output += target.name + ' に 20 のダメージを あたえた' + '\n';
+    output += target.characterName + ' に 20 のダメージを あたえた' + '\n';
 
     this.magic -= 10;
-    output += this.name + ' の まりょくは ' + this.magic + ' になった' + '\n';
+    output += this.characterName + ' の まりょくは ' + this.magic + ' になった' + '\n';
     output += '\n';
     return output;
   };

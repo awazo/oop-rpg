@@ -4,7 +4,7 @@ function yuusya() {
 
   human.call(this);
 
-  this.name = 'ゆうしゃ';
+  this.characterName = 'ゆうしゃ';
   this.gender = 1;
   this.length = 180;
   this.weight = 70;
@@ -14,14 +14,14 @@ function yuusya() {
   this.specialAttack = function(target) {
     this.vitality -= 20;
     var output = '';
-    output += this.name + ' の こうげき' + '\n';
-    output += this.name + ' の ひっさつわざが さくれつした！' + '\n';
+    output += this.characterName + ' の こうげき' + '\n';
+    output += this.characterName + ' の ひっさつわざが さくれつした！' + '\n';
 
     target.vitality -= 50;
-    output += target.name + ' に 50 のダメージを あたえた' + '\n';
+    output += target.characterName + ' に 50 のダメージを あたえた' + '\n';
 
     this.vitality -= 10;
-    output += this.name + ' の たいりょくは ' + this.vitality + ' になった' + '\n';
+    output += this.characterName + ' の たいりょくは ' + this.vitality + ' になった' + '\n';
     output += '\n';
     return output;
   };

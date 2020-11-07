@@ -8,16 +8,16 @@ function game() {
     var lastBoss = new human.lastBoss();
 
     var output = '';
-    output += lastBoss.name + ' が あらわれた！' + '\n';
+    output += lastBoss.characterName + ' が あらわれた！' + '\n';
 
     output += yuusya.specialAttack(lastBoss) + '\n';
     output += wizard.magicAttack(lastBoss) + '\n';
     output += lastBoss.specialEvilAttack(yuusya) + '\n';
     output += cleric.healingMagic(yuusya) + '\n';
 
-    output += yuusya.name + ' は やくそう をつかった' + '\n';
+    output += yuusya.characterName + ' は やくそう をつかった' + '\n';
     yuusya.eatFood('やくそう');
-    output += wizard.name + ' は まほうのみず をつかった' + '\n';
+    output += wizard.characterName + ' は まほうのみず をつかった' + '\n';
     wizard.eatFood('まほうのみず');
     output += '\n';
 
@@ -31,7 +31,7 @@ function game() {
 
   this.showStatus = function(target) {
     var output = '';
-    output += '- ' + target.name + ' の ステータス ---' + '\n';
+    output += '- ' + target.characterName + ' の ステータス ---' + '\n';
     if (target.gender == 1) {
       output += 'せいべつ : 男' + '\n';
     } else {

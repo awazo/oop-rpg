@@ -2,7 +2,7 @@ import { default as abstractCharacter } from './../abstractCharacter.js';
 
 function human() {
 
-  this.name = null;
+  this.characterName = null;
   this.gender = 0;
   this.length = 0;
   this.weight = 0;
