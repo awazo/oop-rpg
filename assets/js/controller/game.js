@@ -37,7 +37,7 @@ function game() {
     } else {
       output += 'せいべつ : 女' + '\n';
     }
-    output += 'しんちょう : ' + target.length + '\n';
+    output += 'しんちょう : ' + target.height + '\n';
     output += 'たいじゅう : ' + target.weight + '\n';
     output += 'たいりょく : ' + target.vitality + '\n';
     output += 'まりょく : ' + target.magic + '\n';

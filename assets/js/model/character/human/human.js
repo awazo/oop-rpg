@@ -4,7 +4,7 @@ function human() {
 
   this.characterName = null;
   this.gender = 0;
-  this.length = 0;
+  this.height = 0;
   this.weight = 0;
   this.vitality = 0;
   this.magic = 0;

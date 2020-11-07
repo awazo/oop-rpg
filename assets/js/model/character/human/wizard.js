@@ -4,7 +4,7 @@ function wizard() {
 
   this.characterName = 'まほうつかい';
   this.gender = 1;
-  this.length = 170;
+  this.height = 170;
   this.weight = 60;
   this.vitality = 20;
   this.magic = 50;

@@ -4,7 +4,7 @@ function cleric() {
 
   this.characterName = 'そうりょ';
   this.gender = 2;
-  this.length = 160;
+  this.height = 160;
   this.weight = 50;
   this.vitality = 20;
   this.magic = 70;

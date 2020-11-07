@@ -4,7 +4,7 @@ function lastBoss() {
 
   this.characterName = 'らすぼす';
   this.gender = 1;
-  this.length = 210;
+  this.height = 210;
   this.weight = 120;
   this.vitality = 500;
   this.magic = 40;

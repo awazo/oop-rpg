@@ -6,7 +6,7 @@ function yuusya() {
 
   this.characterName = 'ゆうしゃ';
   this.gender = 1;
-  this.length = 180;
+  this.height = 180;
   this.weight = 70;
   this.vitality = 100;
   this.magic = 5;
