@@ -7,7 +7,7 @@ var human = {};
 human.yuusya = yuusya;
 human.wizard = wizard;
 human.cleric = cleric;
-human.lastBoxx = lastBoxx;
+human.lastBoss = lastBoss;
 
 export default human;
 
