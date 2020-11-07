@@ -1,4 +1,4 @@
-import { default as character } from './character/_namespace.js';
+import { default as character } from './character/namespace.js';
 
 var model = {};
 model.character = character;
