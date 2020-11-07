@@ -28,7 +28,7 @@ function yuusya() {
 
 }
 
-yuusya.prototype = Object.create(human);
+yuusya.prototype = Object.create(human.prototype);
 yuusya.prototype.constructor = yuusya;
 
 export default yuusya;

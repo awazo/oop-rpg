@@ -2,6 +2,8 @@ import { default as human } from './human.js';
 
 function cleric() {
 
+  human.call(this);
+
   this.characterName = 'そうりょ';
   this.gender = 2;
   this.height = 160;

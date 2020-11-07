@@ -2,6 +2,8 @@ import { default as human } from './human.js';
 
 function wizard() {
 
+  human.call(this);
+
   this.characterName = 'まほうつかい';
   this.gender = 1;
   this.height = 170;

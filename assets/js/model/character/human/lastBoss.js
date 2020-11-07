@@ -2,6 +2,8 @@ import { default as human } from './human.js';
 
 function lastBoss() {
 
+  human.call(this);
+
   this.characterName = 'らすぼす';
   this.gender = 1;
   this.height = 210;
